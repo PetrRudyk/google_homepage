@@ -4,18 +4,25 @@ body {
 	font-family: Verdana, Tahoma, sans-serif;
 }
 .header {
-	height: 50px;
-    margin-top: 10px;	
+	height: 50px;	
 	float: right;
 }
 .header li {
 	display: inline-block;
 	margin-right: 10px;
 	font-family: Arial, sans-serif;
+	font-size: 0.8em;
+	color: #4c4a4a;
 }	
+.header ul {
+	margin: 0px;	
+}
 a {
 	text-decoration: none;
 	color: inherit;
+}
+a:hover {
+	text-decoration: underline;
 }
 img#logo {
 	width: 300px;
@@ -55,13 +62,18 @@ li {
 .buttons li:hover {
 	border: 1px solid rgba(128, 128, 128, 0.48);
 	border-radius: 2px;
+	color: black;
+	
+}
+.buttons a:hover {
+	text-decoration: none;
 }
 img#si {
 	height: 15px;
 	width: 15px;
 	padding: 1px;
 	position: relative;
-    top: 2px;
+    top: 3px;
 }
 img#bell {
     width: 15px;
@@ -70,9 +82,37 @@ img#bell {
     background-color: #757575;
     padding: 3px;
     position: relative;
-    top: 4px;
+    top: 5px;
+}
+img#last {
+	position: relative;
+    top: 8px;
+    border-radius: 20px;	
 }
 .footer {
-	position: absolute;
-    bottom: 0px;
+	position: relative;
+    bottom: -330px;
+    background-color: #f2f2f2;
+    margin: 0;
+    height: 35px;
+    border-top: 1px solid #e4e4e4;
+	font-size: 0.8em;
+    color: #4c4a4a;
+}
+.lf {
+	float: left;	
+}
+.rf {
+	float: right;
+}
+.lf ul {
+	margin: 0;
+}
+.rf ul {
+	margin: 0;
+    margin-right: 10px;
+}
+.footer li {
+    margin: 0px 5px;
+    padding: 10px 5px;
 }
